@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar de cor</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Cor padrão */
+            text-align: center;
+            padding-top: 100px;
+        }
 
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="mudarCor()">Mudar Cor</button>
+    <p id="nome-cor">Cor atual: white</p>
+
+    <script>
+        const cores = ['red', 'blue', 'green', 'orange', 'purple', 'yellow', 'pink', 'gray'];
+
+        function mudarCor() {
+            // Escolhe uma cor aleatória da lista
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+            
+            // Altera o fundo da página
+            document.body.style.backgroundColor = corAleatoria;
+
+            // Atualiza o texto da cor atual
+            document.getElementById('nome-cor').textContent = 'Cor atual: ' + corAleatoria;
+        }
+    </script>
+
+</body>
+</html>
