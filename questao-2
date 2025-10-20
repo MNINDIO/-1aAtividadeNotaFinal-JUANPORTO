@@ -64,20 +64,15 @@
 
 <script>
     function somar() {
-        // Pegando os valores dos inputs
         var numero1 = parseFloat(document.getElementById("num1").value);
         var numero2 = parseFloat(document.getElementById("num2").value);
-
-        // Verifica se os valores são números
         if (isNaN(numero1) || isNaN(numero2)) {
             document.getElementById("resultado").textContent = "Por favor, digite dois números válidos.";
             return;
         }
 
-        // Faz a soma
         var soma = numero1 + numero2;
 
-        // Exibe o resultado
         document.getElementById("resultado").textContent = "Resultado: " + soma;
     }
 </script>
