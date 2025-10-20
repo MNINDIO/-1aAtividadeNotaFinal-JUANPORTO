@@ -7,7 +7,7 @@
  <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: white; /* Cor padrão */
+            background-color: white;
             text-align: center;
             padding-top: 100px;
         }
@@ -42,13 +42,10 @@
         const cores = ['red', 'blue', 'green', 'orange', 'purple', 'yellow', 'pink', 'gray'];
 
         function mudarCor() {
-            // Escolhe uma cor aleatória da lista
             const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
             
-            // Altera o fundo da página
             document.body.style.backgroundColor = corAleatoria;
 
-            // Atualiza o texto da cor atual
             document.getElementById('nome-cor').textContent = 'Cor atual: ' + corAleatoria;
         }
     </script>
