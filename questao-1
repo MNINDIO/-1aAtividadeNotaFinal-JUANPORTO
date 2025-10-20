@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Pessoal - Juan Porto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .info strong {
+            color: #34495e;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Perfil Pessoal</h1>
+
+    <div class="info">
+        <p><strong>Nome:</strong> Juan Porto</p>
+        <p><strong>Matrícula:</strong> 202502264534</p>
+        <p><strong>Curso:</strong> Ciência da Computação</p>
+    </div>
+
+    <h2>Objetivo Profissional</h2>
+    <p>
+        Ser um ótimo profissional, contribuindo de forma significativa com projetos e equipes, buscando sempre o crescimento pessoal e profissional na área de tecnologia.
+    </p>
+
+    <footer>
+        &copy; 2025 Juan Porto
+    </footer>
+</div>
+
+</body>
+</html>
