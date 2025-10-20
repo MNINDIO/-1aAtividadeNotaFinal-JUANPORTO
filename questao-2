@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma de Dois Números</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 80px;
+            padding: 8px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Somador de Números</h2>
+
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <br>
+    <button onclick="somar()">Somar</button>
+
+    <p id="resultado"></p>
+</div>
+
+<script>
+    function somar() {
+        // Pegando os valores dos inputs
+        var numero1 = parseFloat(document.getElementById("num1").value);
+        var numero2 = parseFloat(document.getElementById("num2").value);
+
+        // Verifica se os valores são números
+        if (isNaN(numero1) || isNaN(numero2)) {
+            document.getElementById("resultado").textContent = "Por favor, digite dois números válidos.";
+            return;
+        }
+
+        // Faz a soma
+        var soma = numero1 + numero2;
+
+        // Exibe o resultado
+        document.getElementById("resultado").textContent = "Resultado: " + soma;
+    }
+</script>
+
+</body>
+</html>
