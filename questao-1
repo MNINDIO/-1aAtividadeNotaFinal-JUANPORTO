@@ -1,77 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Perfil Pessoal - Juan Porto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal - Juan Porto</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            color: #2d3436;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
-
-        .container {
-            max-width: 700px;
-            margin: 50px auto;
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
-        h1 {
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
             color: #2c3e50;
+        }
+        main {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 40px;
+            width: 90%;
+            max-width: 600px;
             text-align: center;
         }
-
-        .info p {
-            font-size: 18px;
-            margin: 10px 0;
+        main img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 3px solid #74b9ff;
         }
-
-        .info strong {
-            color: #34495e;
+        main h2 {
+            color: #0984e3;
+            margin-bottom: 10px;
         }
-
-        h2 {
-            margin-top: 30px;
-            color: #2c3e50;
-        }
-
         p {
-            font-size: 16px;
+            font-size: 1.1em;
             line-height: 1.6;
         }
-
+        .social {
+            margin-top: 16px;
+        }
+        .social a {
+            color: #0984e3;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.4em;
+            transition: color 0.2s;
+        }
+        .social a:hover {
+            color: #2d3436;
+        }
         footer {
-            margin-top: 40px;
+            margin-top: auto;
+            background-color: rgba(255,255,255,0.9);
+            width: 100%;
             text-align: center;
-            font-size: 14px;
-            color: #888;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #636e72;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Perfil Pessoal</h1>
-
-    <div class="info">
-        <p><strong>Nome:</strong> Juan Porto</p>
+    <main>
+        <h2>Juan Porto</h2>
         <p><strong>Matrícula:</strong> 202502264534</p>
         <p><strong>Curso:</strong> Ciência da Computação</p>
-    </div>
-
-    <h2>Objetivo Profissional</h2>
-    <p>
-        Ser um ótimo profissional, contribuindo de forma significativa com projetos e equipes, buscando sempre o crescimento pessoal e profissional na área de tecnologia.
-    </p>
-
-    <footer>
-        &copy; 2025 Juan Porto
-    </footer>
-</div>
+        <p>
+            <strong>Sobre mim:</strong><br>
+            Apaixonado por tecnologia, programação e aprender coisas novas todos os dias. 
+            Gosto de desafios e acredito que a colaboração e a curiosidade são essenciais para crescer como profissional e como pessoa.
+        </p>
+        <p>
+            <strong>Objetivo profissional:</strong><br>
+            Tornar-me um profissional referência em tecnologia, contribuindo para projetos inovadores e impactando positivamente a vida das pessoas através da computação.
+        </p>
+    
+    </main>
 
 </body>
 </html>
