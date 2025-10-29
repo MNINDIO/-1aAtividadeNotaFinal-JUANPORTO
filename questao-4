@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background: #f2f2f2;
+            background: #000000;
             font-family: 'Segoe UI', Arial, sans-serif;
             display: flex;
             align-items: center;
@@ -14,7 +14,7 @@
             height: 100vh;
         }
         .container {
-            background: #fff;
+            background: #ffffff;
             padding: 32px 24px;
             border-radius: 12px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.10);
@@ -44,12 +44,12 @@
             outline: none;
         }
         input[type="number"]:focus {
-            border-color: #2a6fd6;
+            border-color: #060e1b;
         }
         button {
             width: 100%;
             padding: 10px;
-            background: #2a6fd6;
+            background: #212935;
             color: #fff;
             font-size: 1.1em;
             border: none;
